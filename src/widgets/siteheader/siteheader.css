@@ -1,0 +1,7 @@
+.siteheader {
+	background: #ff00ff;
+}
+
+.siteheader.wgstatus-loading {
+	display: none;
+}

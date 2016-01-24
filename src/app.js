@@ -1,6 +1,17 @@
 "use strict"
 
-import Main from "siteheader";
+import SiteHeader from "siteheader/siteheader";
 
+console.log("App loaded. ", SiteHeader() );
 
-console.log("App loaded", Main() );
+/*require(["siteheader/siteheader"], function(SiteHeader) {
+
+	console.log("App loaded. ", SiteHeader.default() );
+
+});
+*/
+
+require(["heroheader/heroheader"], function(HeroHeader) {
+
+	console.log(HeroHeader.default());
+});

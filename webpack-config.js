@@ -7,7 +7,8 @@ module.exports = {
     //watch: true,
 	entry: {
 		app: ["./src/app.js", "./src/app.css"] // main entry point
-		, critical: ["./src/widgets/siteheader.js", "./src/widgets/siteheader.css"] // module separated from app (using ES6, rather than require.ensure)
+		, critical: ["./src/widgets/siteheader/siteheader.js"] // module separated from app (using ES6, rather than require.ensure)
+		, heroheader: ["./src/widgets/heroheader/heroheader.js"]
 		, sitefooter: "./src/widgets/sitefooter.css"
 	},
 	output: {
